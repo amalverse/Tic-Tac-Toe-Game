@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav{                               /* Navigation Bar */
+    background-color: purple;
+    color: white;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+body{                                /* Body */
+    background-color: blueviolet;
+
+}
+/* Main Body Container */
+.gameContainer {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;                  /* to place div below*/
+}
+/* Game layout box Container */
+
+.container {
+    display: grid;
+    gap : 10px;
+    grid-template-columns: repeat(3 , 10vw);
+    grid-template-rows: repeat(3 , 10vw);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    position: relative;
+}
+
+/*style on each Grid box */
+.box{
+    border-radius: 2vw;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: darkblue; 
+    box-shadow:0 0.5rem 1rem blue ;
+    color: white;
+
+}
+.box:hover{
+    background-color: blue;
+    cursor: pointer;
+
+}
+
+/* game information box */
+.gameInfo{
+    padding: 0 34px;
+    margin: 40px;
+    font-weight: bolder;
+}
+.gameInfo h1{ 
+    font-size: 2.5rem;
+}
+.info{
+    margin-top: 20px;
+    background-color:blue ;
+    color: white;
+    padding: 3px 10px;
+
+}
+
+.imageBox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+/* Reset Button */
+#reset{
+    margin: 20px 20px;
+    padding: 3px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+}
+
+
+/* 
+ * 
+ * This section contains media queries to adjust the layout and styles for smaller screens,
+ * such as phones and other mobile devices.
+ */
+/* Setting Media for Smaller screen/phones etc. */
+@media screen and (max-width:700px) {
+    .gameContainer{
+        flex-wrap: wrap;
+
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3 , 20vw);
+        grid-template-rows: repeat(3 , 20vw);
+        
+    }
+    .gameInfo{
+        margin-top: 34px;
+    
+    }
+    .gameInfo h1{
+        display:none;
+    
+    }
+
+}
+
