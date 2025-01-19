@@ -1,4 +1,4 @@
-
+Preview- https://htmlpreview.github.io/?https://github.com/amalverse/Tic-Tac-Toe--Grid-method/blob/main/index.html
 ## Tic Tac Toe Game
 
 This is a simple implementation of the classic Tic Tac Toe game. The game is played on a 3x3 grid where two players take turns marking the spaces in the grid with X and O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
