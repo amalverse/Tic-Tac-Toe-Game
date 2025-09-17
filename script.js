@@ -89,10 +89,9 @@ const checkDraw = () => {
 };
 
 //Game Logic
-window.onload = function() {
 music.loop = true;
 music.play(); //music play
-}
+
 
 //Add onclick listner to all boxes
 Array.from(boxes).forEach((element) => {
